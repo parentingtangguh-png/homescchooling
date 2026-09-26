@@ -18,7 +18,7 @@ Milestone Fase B v1.1                ← turunan kedua; FINAL
     ↓
 Milestone Fase A v1.0                ← turunan ketiga; FINAL
     ↓
-Peta CP dan Elemen v0.1 rev.23       ← peta teknis lintas fase; DRAF (pra-v1.0; verifikasi + closure selesai; PL5↔Seni ditutup rev.23; blocker: cabang Seni)
+Peta CP dan Elemen v0.1 rev.24       ← peta teknis lintas fase; DRAF (pra-v1.0; verifikasi + closure selesai; PL5↔Seni ditutup rev.23; audit PL5 dilengkapi rev.24; blocker: cabang Seni)
     ↓
 Indikator Asesmen                    ← belum disusun
 ```
@@ -35,7 +35,7 @@ Indikator Asesmen                    ← belum disusun
 | Peta Kompetensi Fase C | **v1.1** | Final | `peta_kompetensi_fase_c_v1_1.md` |
 | Milestone Fase B | **v1.1** | Final | `milestone_fase_b_v1_1.md` |
 | Milestone Fase A | **v1.0** | Final | `milestone_fase_a_v1_0.md` |
-| Peta CP dan Elemen | **v0.1 rev.23** | Draf — pra-v1.0; seluruh primary-source verification selesai (rev.11–18); final consistency closure selesai (rev.19–22); PL5↔Seni residual ditutup (rev.23); tidak ada known issue substantif tersisa; **blocker tunggal: keputusan cabang Seni**; review ditutup rev.23 | `peta_cp_dan_elemen_v0_1.md` |
+| Peta CP dan Elemen | **v0.1 rev.24** | Draf — pra-v1.0; seluruh primary-source verification selesai (rev.11–18); final consistency closure selesai (rev.19–22); PL5↔Seni residual ditutup (rev.23); audit PL5 dilengkapi (rev.24); tidak ada known issue substantif tersisa; **blocker tunggal: keputusan cabang Seni**; review ditutup rev.23; audit PL5 ditutup rev.24 | `peta_cp_dan_elemen_v0_1.md` |
 | Indikator Asesmen | — | Belum disusun | — |
 
 **Invariant:** Nama file fisik harus selalu sinkron dengan versi isi dokumen. Jika versi isi naik, rename file sekaligus.
@@ -160,7 +160,7 @@ Kapan menaikkan versi:
 
 ## 7. Blokir Menuju v1.0 Peta CP
 
-**Status fase:** Audit internal DITUTUP per rev.10. Primary-source verification SELESAI per rev.11–18. Fase **pra-v1.0 — final consistency closure** SELESAI per rev.19–22 (rev.19–20 status + Matriks A/B; rev.21 Matriks Fase C; rev.22 regenerasi Bagian 10 Seni dan Bagian 6.3 BI dari teks primer, ditambah regenerasi seluruh matriks turunannya). PL5↔Seni residual **DITUTUP per rev.23**. Review ditutup rev.23.
+**Status fase:** Audit internal DITUTUP per rev.10. Primary-source verification SELESAI per rev.11–18. Fase **pra-v1.0 — final consistency closure** SELESAI per rev.19–22 (rev.19–20 status + Matriks A/B; rev.21 Matriks Fase C; rev.22 regenerasi Bagian 10 Seni dan Bagian 6.3 BI dari teks primer, ditambah regenerasi seluruh matriks turunannya). PL5↔Seni residual **DITUTUP per rev.23**. Audit kelengkapan PL5 (PL5.10 Tari B/C + PL5.01 Teater C Mengalami) **DITUTUP per rev.24**. Review ditutup rev.23; audit PL5 ditutup rev.24.
 
 Peta CP belum dapat dinaikkan ke v1.0 sampai:
 
@@ -210,6 +210,7 @@ Peta CP belum dapat dinaikkan ke v1.0 sampai:
 | Sinkronisasi derivatif Matriks 12/13 Fase C rev.21 | 2026-09-22 | Matriks 12.4 PL4.01 C: L semua → L(Musik/Rupa/Tari); P(Teater); Matriks 12.13 KI-SEN.01 C: L(Musik/Rupa); P(Tari/Teater) → L semua cabang; Matriks 13 Tari C Menciptakan: baris PL4.05 dihapus; Matriks 13 Teater C Menciptakan: PL4.05 dihapus — hanya KI-SEN.06, PL4.04; CLAUDE.md Bagian 9 diperbarui (kasus pending Seni dieksplisitkan). | **Rev.21 SELESAI** — blocker tunggal: keputusan cabang Seni |
 | Final consistency closure rev.22 | 2026-09-22 | **Semantic drift KI-SEN/PL4 ditemukan dan ditutup.** Nama elemen CP nasional selama ini diperlakukan sebagai sinonim kode internal (`Berpikir Artistik`→`KI-SEN.05`, `Mengalami`→`KI-SEN.01`, `Merefleksikan`→`PL4.07`, `Berdampak`→`KI-SEN.06`). Seluruh 60 baris sumber Bagian 10 diregenerasi dari teks CP primer; 4 kebocoran substansi antar-elemen dan 1 penambahan makna tanpa dasar primer dihapus; Bagian 10.0 (definisi kanonik + aturan uji kategori) ditambahkan; Bagian 10.5 diregenerasi menjadi 3 tabel (A/B/C × 17 kode × 4 cabang); Matriks 12.4, 12.13, dan 60 baris Seni Matriks 13 diregenerasi sebagai derivasi dan **diverifikasi secara mekanis**. Bagian 6.3 BI A/B/C dibongkar per pasangan: `PL8.06` C L→K, `PL8.07` C L→P, `PL8.09` C L→P; Matriks 12.8 dan Matriks 13 BI disinkronkan. Matriks 12.9 `PL9.09` dipecah per cabang per fase. Temuan tambahan (`PL5`↔Tari B/C) dicatat, tidak dipetakan. 137 kode utuh; tidak ada dokumen FINAL diedit. | **Rev.22 SELESAI** — review ditutup; known issue BI C ditutup; blocker tunggal: keputusan cabang Seni |
 | Penutupan residual PL5↔Seni rev.23 | 2026-09-26 | Audit seluruh 4 cabang × 3 fase × PL5.01–.10: hanya Tari B dan Tari C Berpikir Artistik mengandung tuntutan kolaborasi substantif. Tari B: `PL5.01` L dan `PL5.08` P ditambahkan ke Bagian 10.3. Tari C: `PL5.01` L dan `PL5.06` L ditambahkan ke Bagian 10.3. Catatan "dicatat, bukan dipetakan" dihapus. Matriks 12.5 (`PL5.01`/`.06`/`.08`) dan Matriks 13 (Tari B/C Berpikir Artistik) disinkronkan. Kategori tidak berubah — PJOK sudah memberi kategori setara atau lebih kuat. 137 kode tetap utuh. | **Rev.23 SELESAI** — review ditutup; blocker tunggal: keputusan cabang Seni |
+| Micro-closure audit kelengkapan PL5 rev.24 | 2026-09-26 | PL5.10=P ditambahkan untuk Tari B dan Tari C Berpikir Artistik ("tujuan bersama"/"berperan aktif dalam kelompok" — standar sama dengan PJOK B/C "keberhasilan kelompok"). PL5.01=P ditambahkan untuk Teater C Mengalami ("permainan peran berkelompok" + "aksi dan reaksi" — tujuan CP melatih akting → PARSIAL). Bagian 10.5 scope diklarifikasi: hanya 17 kode domain Seni (PL4.01–.09, KI-SEN.01–.08); PL5 lintas-domain dirangkum di Matriks 12.5. Matriks 12.5 dan Matriks 13 disinkronkan. Kategori akhir tidak berubah. 137 kode tetap utuh. | **Rev.24 SELESAI** — audit PL5 ditutup; blocker tunggal: keputusan cabang Seni |
 
 ### Koreksi Audit Ketiga (rev.5 Peta CP)
 
@@ -228,4 +229,4 @@ Peta CP belum dapat dinaikkan ke v1.0 sampai:
 
 Satu kasus pending aktif: **keputusan jalur/cabang seni** per peserta didik atau komunitas — lihat Bagian 4 (Keputusan Terbuka) dan Bagian 7 (Blocker v1.0 Peta CP).
 
-Setelah rev.23, ini adalah **satu-satunya keputusan kurikuler yang masih terbuka** sebelum Peta CP dapat dinaikkan ke v1.0. Secara teknis pemetaan sudah selesai: kategori per cabang per fase tersedia di Bagian 10.5 Peta CP, sehingga penetapan cabang tinggal memilih kolom yang berlaku — tidak diperlukan pemetaan ulang.
+Setelah rev.24, ini adalah **satu-satunya keputusan kurikuler yang masih terbuka** sebelum Peta CP dapat dinaikkan ke v1.0. Secara teknis pemetaan sudah selesai: kategori per cabang per fase tersedia di Bagian 10.5 Peta CP, sehingga penetapan cabang tinggal memilih kolom yang berlaku — tidak diperlukan pemetaan ulang.
